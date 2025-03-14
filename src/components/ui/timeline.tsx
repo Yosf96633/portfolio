@@ -38,10 +38,10 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
       ref={containerRef}
     >
       <div className="max-w-7xl mx-auto py-8 px-4 md:px-8 lg:px-10">
-        <h2 className="text-lg md:text-4xl mb-4 text-black dark:text-white max-w-4xl">
+        <h2 className="text-lg max-md:text-center md:text-5xl mb-4 text-black dark:text-white max-w-4xl">
         How I Became a Web Developer
         </h2>
-        <p className="text-neutral-700 dark:text-neutral-300 text-sm md:text-base max-w-sm">
+        <p className="text-neutral-700 max-md:text-center dark:text-neutral-300 text-sm md:text-base max-w-sm">
         From writing my first HTML tag to building full-stack applications, this is my journey through web development.
         </p>
       </div>

@@ -23,7 +23,7 @@ export function HeroPage() {
           A full-stack web developer skilled in React, Next.js, TypeScript,
           Tailwind, Express, Node.js, and MongoDB. I build modern, scalable, and
           secure web applications using tools like Zod, Next-Auth, Shadcn UI,
-          and Aeternity UI.
+          and Aceternity UI.
         </p>
         {/* Button */}
        <div className=" max-md:space-y-6 space-x-6">
