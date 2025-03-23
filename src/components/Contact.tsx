@@ -53,7 +53,7 @@ export function ProfileForm() {
                   <FormLabel className=" text-white">Name</FormLabel>
                   <FormControl>
                     <Input
-                      className=" w-[70vw] md:w-[30vw] py-5"
+                      className=" w-[70vw] text-white md:w-[30vw] py-5"
                       placeholder="John Doe"
                       {...field}
                     />
@@ -70,7 +70,7 @@ export function ProfileForm() {
                   <FormLabel className=" text-white">Email</FormLabel>
                   <FormControl>
                     <Input
-                      className="  w-[70vw]  md:w-[30vw] py-5"
+                      className="  w-[70vw] text-white  md:w-[30vw] py-5"
                       placeholder="john@example.com"
                       {...field}
                     />
@@ -87,7 +87,7 @@ export function ProfileForm() {
                   <FormLabel className=" text-white">Message</FormLabel>
                   <FormControl>
                     <Input
-                      className="  w-[70vw]  md:w-[30vw] py-5"
+                      className="  w-[70vw] text-white md:w-[30vw] py-5"
                       placeholder="Hi"
                       {...field}
                     />
