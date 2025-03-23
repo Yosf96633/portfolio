@@ -7,7 +7,7 @@ export function Journey() {
       title: "HTML & CSS",
       content: (
         <div>
-          <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
+          <p className="text-neutral-200 text-xs md:text-sm font-normal mb-8">
             Mastered the basics of HTML & CSS, designing my first web pages with
             clean layouts and styling.
           </p>
@@ -34,7 +34,7 @@ export function Journey() {
       title: "JavaScript",
       content: (
         <div>
-          <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
+          <p className="text-neutral-200 text-xs md:text-sm font-normal mb-8">
             Enhanced my web development skills by mastering JavaScript, enabling
             dynamic content updates and user interactions
           </p>
@@ -54,24 +54,24 @@ export function Journey() {
       title: "React & Tailwind CSS",
       content: (
         <div>
-          <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-4">
+          <p className="text-neutral-200 text-xs md:text-sm font-normal mb-4">
             Built dynamic UI components and interactive web apps using React and
             Tailwind CSS
           </p>
           <div className="mb-8">
-            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
+            <div className="flex gap-2 items-center text-neutral-300 text-xs md:text-sm">
               ✅ Component-based development with React
             </div>
-            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
+            <div className="flex gap-2 items-center text-neutral-300 text-xs md:text-sm">
               ✅ State management with hooks & context API
             </div>
-            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
+            <div className="flex gap-2 items-center text-neutral-300 text-xs md:text-sm">
               ✅ API integration for dynamic data
             </div>
-            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
+            <div className="flex gap-2 items-center text-neutral-300 text-xs md:text-sm">
               ✅ Utility-first styling for rapid development
             </div>
-            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
+            <div className="flex gap-2 items-center text-neutral-300 text-xs md:text-sm">
               ✅ Responsive & mobile-friendly UI design
             </div>
           </div>
@@ -105,24 +105,24 @@ export function Journey() {
       title: "Node & Express js",
       content: (
         <div>
-          <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-4">
+          <p className="text-neutral-200 text-xs md:text-sm font-normal mb-4">
             Started backend development with Node.js and Express.js.
           </p>
           <div className="mb-8">
-            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
+            <div className="flex gap-2 items-center text-neutral-300 text-xs md:text-sm">
               ✅ Built RESTful APIs with Express
             </div>
-            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
+            <div className="flex gap-2 items-center text-neutral-300 text-xs md:text-sm">
               ✅ Implemented middleware for request handling
             </div>
-            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
+            <div className="flex gap-2 items-center text-neutral-300 text-xs md:text-sm">
               ✅ Connected Node.js apps to MongoDB
             </div>
-            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
+            <div className="flex gap-2 items-center text-neutral-300 text-xs md:text-sm">
               ✅ Integrated third-party APIs & services
             </div>
             <div className=" pt-6 md:pt-12">
-              <h3 className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
+              <h3 className="flex gap-2 items-center text-neutral-300 text-xs md:text-sm">
                 Build a backend URL-shortner functionality
               </h3>
               <a
@@ -140,21 +140,21 @@ export function Journey() {
       title: "Mongo DB & Mongoose",
       content: (
         <div>
-          <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-4">
+          <p className="text-neutral-200 text-xs md:text-sm font-normal mb-4">
             Started working with MongoDB, designing NoSQL databases for scalable
             applications
           </p>
           <div className="mb-8">
-            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
+            <div className="flex gap-2 items-center text-neutral-300 text-xs md:text-sm">
               ✅ Connected MongoDB with Mongoose for seamless data modeling
             </div>
-            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
+            <div className="flex gap-2 items-center text-neutral-300 text-xs md:text-sm">
               ✅ Created schemas & models for structured data handling
             </div>
-            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
+            <div className="flex gap-2 items-center text-neutral-300 text-xs md:text-sm">
               ✅ Performed CRUD operations efficiently
             </div>
-            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
+            <div className="flex gap-2 items-center text-neutral-300 text-xs md:text-sm">
               ✅ Used aggregation & indexing for optimized queries
             </div>
           </div>
@@ -165,23 +165,23 @@ export function Journey() {
       title: "Next js",
       content: (
         <div>
-          <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-4">
+          <p className="text-neutral-200 text-xs md:text-sm font-normal mb-4">
             Dived into Next.js to build fast and SEO-friendly web applications.
           </p>
           <div className="mb-8">
-            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
+            <div className="flex gap-2 items-center text-neutral-300 text-xs md:text-sm">
               ✅ Implemented SSR, SSG, and ISR for better performance 🚀
             </div>
-            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
+            <div className="flex gap-2 items-center text-neutral-300 text-xs md:text-sm">
               ✅ Used API routes to handle backend logic
             </div>
-            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
+            <div className="flex gap-2 items-center text-neutral-300 text-xs md:text-sm">
               ✅ Integrated authentication with NextAuth.js
             </div>
-            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
+            <div className="flex gap-2 items-center text-neutral-300 text-xs md:text-sm">
               ✅ Improved caching & data fetching with Server Actions
             </div>
-            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
+            <div className="flex gap-2 items-center text-neutral-300 text-xs md:text-sm">
               ✅ Built a full-stack app with Next.js, MongoDB & Tailwind CSS
             </div>
           </div>

@@ -1,40 +1,70 @@
 "use client";
-import React from "react";
-import { SparklesCore } from "./ui/sparkles";
-export function HeroPage() {
+import { ThreeDMarquee } from "@/components/ui/3d-marquee";
+
+export function ThreeDMarqueeDemoSecond() {
+  const images = [
+    "https://assets.aceternity.com/cloudinary_bkp/3d-card.png",
+    "https://assets.aceternity.com/animated-modal.png",
+    "https://assets.aceternity.com/animated-testimonials.webp",
+    "https://assets.aceternity.com/cloudinary_bkp/Tooltip_luwy44.png",
+    "https://assets.aceternity.com/github-globe.png",
+    "https://assets.aceternity.com/glare-card.png",
+    "https://assets.aceternity.com/layout-grid.png",
+    "https://assets.aceternity.com/flip-text.png",
+    "https://assets.aceternity.com/hero-highlight.png",
+    "https://assets.aceternity.com/carousel.webp",
+    "https://assets.aceternity.com/placeholders-and-vanish-input.png",
+    "https://assets.aceternity.com/shooting-stars-and-stars-background.png",
+    "https://assets.aceternity.com/signup-form.png",
+    "https://assets.aceternity.com/cloudinary_bkp/stars_sxle3d.png",
+    "https://assets.aceternity.com/spotlight-new.webp",
+    "https://assets.aceternity.com/cloudinary_bkp/Spotlight_ar5jpr.png",
+    "https://assets.aceternity.com/cloudinary_bkp/Parallax_Scroll_pzlatw_anfkh7.png",
+    "https://assets.aceternity.com/tabs.png",
+    "https://assets.aceternity.com/cloudinary_bkp/Tracing_Beam_npujte.png",
+    "https://assets.aceternity.com/cloudinary_bkp/typewriter-effect.png",
+    "https://assets.aceternity.com/glowing-effect.webp",
+    "https://assets.aceternity.com/hover-border-gradient.png",
+    "https://assets.aceternity.com/cloudinary_bkp/Infinite_Moving_Cards_evhzur.png",
+    "https://assets.aceternity.com/cloudinary_bkp/Lamp_hlq3ln.png",
+    "https://assets.aceternity.com/macbook-scroll.png",
+    "https://assets.aceternity.com/cloudinary_bkp/Meteors_fye3ys.png",
+    "https://assets.aceternity.com/cloudinary_bkp/Moving_Border_yn78lv.png",
+    "https://assets.aceternity.com/multi-step-loader.png",
+    "https://assets.aceternity.com/vortex.png",
+    "https://assets.aceternity.com/wobble-card.png",
+    "https://assets.aceternity.com/world-map.webp",
+  ];
   return (
-    <div className="h-screen relative w-full bg-black flex flex-col justify-center px-16 max-md:px-6">
-      <div className=" absolute inset-0 h-screen">
-        <SparklesCore
-          id="tsparticlesfullpage"
-          background="transparent"
-          minSize={0.6}
-          maxSize={1.4}
-          particleDensity={100}
-          className="w-full h-full"
-          particleColor="#FFFFFF"
-        />
-      </div>
-      <div className=" relative z-50 space-y-8 selection:text-black selection:bg-white">
-        <h1 className=" md:text-6xl md:font-extrabold font-bold text-4xl  text-white">
-          Hi 👋, I'm Yousaf
-        </h1>
-        <p className="md:text-xl text-lg md:font-semibold tracking-wider text-white">
-          A full-stack web developer skilled in React, Next.js, TypeScript,
-          Tailwind, Express, Node.js, and MongoDB. I build modern, scalable, and
-          secure web applications using tools like Zod, Next-Auth, Shadcn UI,
-          and Aceternity UI.
-        </p>
-        {/* Button */}
-       <div className=" max-md:space-y-6 space-x-6">
-       <button className="inline-flex cursor-pointer relative z-50 h-12 animate-shimmer items-center justify-center rounded-md border border-gray-300 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-white transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
-         See my work
-        </button>
-        <button className="inline-flex cursor-pointer relative z-50 h-12 animate-shimmer items-center justify-center rounded-md border border-gray-300 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-white transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
+    <div className="relative mx-auto my-10 flex h-screen w-full max-w-7xl flex-col items-center justify-center overflow-hidden rounded-3xl">
+      <h2 className="relative z-20 mx-auto max-w-4xl text-center text-2xl font-bold text-balance text-white md:text-4xl lg:text-6xl">
+        Hi, I'm{""}
+        <span className="relative z-20 inline-block rounded-xl bg-blue-500/40 px-4 py-1 text-white underline decoration-sky-500 decoration-[6px] underline-offset-[16px] backdrop-blur-sm">
+          Yousaf
+        </span>{" "}
+      </h2>
+      <p className="relative z-20 md:font-bold mx-auto max-w-2xl py-8 text-center text-sm text-neutral-200 md:text-xl">
+        A full-stack web developer skilled in React, Next.js, TypeScript,
+        Tailwind, Express, Node.js, and MongoDB. I build modern, scalable, and
+        secure web applications using tools like Zod, Next-Auth, Shadcn UI, and
+        Aceternity UI.
+      </p>
+
+      <div className="relative z-20 flex flex-wrap items-center justify-center gap-4 pt-4">
+        <a href="#projects" className="rounded-md bg-sky-600 px-6 py-2.5 text-sm font-medium text-white transition-colors hover:bg-sky-700 focus:ring-2 focus:ring-sky-500 focus:ring-offset-2 focus:ring-offset-black focus:outline-none">
+          See my work
+        </a>
+        <a href="#contact" className="rounded-md border border-white/20 bg-white/10 px-6 py-2.5 text-sm font-medium text-white backdrop-blur-sm transition-colors hover:bg-white/20 focus:ring-2 focus:ring-white/20 focus:ring-offset-2 focus:ring-offset-black focus:outline-none">
          Hire me
-        </button>
-       </div>
+        </a>
       </div>
+
+      {/* overlay */}
+      <div className="absolute inset-0 z-10 h-full w-full bg-black/40" />
+      <ThreeDMarquee
+        className="pointer-events-none absolute inset-0 h-full w-full"
+        images={images}
+      />
     </div>
   );
 }

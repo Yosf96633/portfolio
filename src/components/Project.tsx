@@ -25,7 +25,7 @@ const data = [
 ];
 const Project = () => {
   return (
-    <div className="bg-[#0A0A0A] px-4 max-md:px-2">
+    <div id="projects" className="bg-[#0A0A0A] px-4 max-md:px-2">
       <h1 className=" text-white text-center md:py-12 md:text-5xl md:font-semibold py-6 text-2xl font-normal">
         My Project
       </h1>
