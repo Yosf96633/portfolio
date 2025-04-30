@@ -1,4 +1,3 @@
-import { GithubIcon, LinkedinIcon, MailIcon } from "lucide-react";
 
 const Footer = () => {
     return (

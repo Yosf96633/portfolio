@@ -1,70 +1,56 @@
-"use client";
-import { ThreeDMarquee } from "@/components/ui/3d-marquee";
-
-export function ThreeDMarqueeDemoSecond() {
-  const images = [
-    "https://assets.aceternity.com/cloudinary_bkp/3d-card.png",
-    "https://assets.aceternity.com/animated-modal.png",
-    "https://assets.aceternity.com/animated-testimonials.webp",
-    "https://assets.aceternity.com/cloudinary_bkp/Tooltip_luwy44.png",
-    "https://assets.aceternity.com/github-globe.png",
-    "https://assets.aceternity.com/glare-card.png",
-    "https://assets.aceternity.com/layout-grid.png",
-    "https://assets.aceternity.com/flip-text.png",
-    "https://assets.aceternity.com/hero-highlight.png",
-    "https://assets.aceternity.com/carousel.webp",
-    "https://assets.aceternity.com/placeholders-and-vanish-input.png",
-    "https://assets.aceternity.com/shooting-stars-and-stars-background.png",
-    "https://assets.aceternity.com/signup-form.png",
-    "https://assets.aceternity.com/cloudinary_bkp/stars_sxle3d.png",
-    "https://assets.aceternity.com/spotlight-new.webp",
-    "https://assets.aceternity.com/cloudinary_bkp/Spotlight_ar5jpr.png",
-    "https://assets.aceternity.com/cloudinary_bkp/Parallax_Scroll_pzlatw_anfkh7.png",
-    "https://assets.aceternity.com/tabs.png",
-    "https://assets.aceternity.com/cloudinary_bkp/Tracing_Beam_npujte.png",
-    "https://assets.aceternity.com/cloudinary_bkp/typewriter-effect.png",
-    "https://assets.aceternity.com/glowing-effect.webp",
-    "https://assets.aceternity.com/hover-border-gradient.png",
-    "https://assets.aceternity.com/cloudinary_bkp/Infinite_Moving_Cards_evhzur.png",
-    "https://assets.aceternity.com/cloudinary_bkp/Lamp_hlq3ln.png",
-    "https://assets.aceternity.com/macbook-scroll.png",
-    "https://assets.aceternity.com/cloudinary_bkp/Meteors_fye3ys.png",
-    "https://assets.aceternity.com/cloudinary_bkp/Moving_Border_yn78lv.png",
-    "https://assets.aceternity.com/multi-step-loader.png",
-    "https://assets.aceternity.com/vortex.png",
-    "https://assets.aceternity.com/wobble-card.png",
-    "https://assets.aceternity.com/world-map.webp",
-  ];
+import React from "react";
+import Particles from "./ui/particles";
+import RotatingText from "./ui/RotatingText";
+import { Button } from "./ui/button";
+const Hero = () => {
   return (
-    <div className="relative mx-auto my-10 flex h-screen w-full max-w-7xl flex-col items-center justify-center overflow-hidden rounded-3xl">
-      <h2 className="relative z-20 mx-auto max-w-4xl text-center text-2xl font-bold text-balance text-white md:text-4xl lg:text-6xl">
-        Hi, I'm{""}
-        <span className="relative z-20 inline-block rounded-xl bg-blue-500/40 px-4 py-1 text-white underline decoration-sky-500 decoration-[6px] underline-offset-[16px] backdrop-blur-sm">
-          Yousaf
-        </span>{" "}
-      </h2>
-      <p className="relative z-20 md:font-bold mx-auto max-w-2xl py-8 text-center text-sm text-neutral-200 md:text-xl">
-        A full-stack web developer skilled in React, Next.js, TypeScript,
-        Tailwind, Express, Node.js, and MongoDB. I build modern, scalable, and
-        secure web applications using tools like Zod, Next-Auth, Shadcn UI, and
-        Aceternity UI.
-      </p>
-
-      <div className="relative z-20 flex flex-wrap items-center justify-center gap-4 pt-4">
-        <a href="#projects" className="rounded-md bg-sky-600 px-6 py-2.5 text-sm font-medium text-white transition-colors hover:bg-sky-700 focus:ring-2 focus:ring-sky-500 focus:ring-offset-2 focus:ring-offset-black focus:outline-none">
-          See my work
-        </a>
-        <a href="#contact" className="rounded-md border border-white/20 bg-white/10 px-6 py-2.5 text-sm font-medium text-white backdrop-blur-sm transition-colors hover:bg-white/20 focus:ring-2 focus:ring-white/20 focus:ring-offset-2 focus:ring-offset-black focus:outline-none">
-         Hire me
-        </a>
+    <div className=" bg-black relative w-screen h-screen">
+      <div className=" h-full w-full absolute z-0">
+        <Particles
+          particleColors={["#ffffff", "#ffffff"]}
+          particleCount={400}
+          particleSpread={10}
+          speed={0.1}
+          particleBaseSize={100}
+          moveParticlesOnHover={true}
+          alphaParticles={false}
+          disableRotation={false}
+        />
       </div>
+      <div className=" absolute z-10 text-white flex flex-col top-36 space-y-6 left-28">
+        <h1 className=" flex space-x-3 items-center">
+          <p className=" text-4xl font-semibold ">Hi, I'm </p>
 
-      {/* overlay */}
-      <div className="absolute inset-0 z-10 h-full w-full bg-black/40" />
-      <ThreeDMarquee
-        className="pointer-events-none absolute inset-0 h-full w-full"
-        images={images}
-      />
+          <RotatingText
+            texts={["Yousaf", "Web developer", "Full stack developer"]}
+            mainClassName="px-2 sm:px-2 md:px-3 bg-white text-black overflow-hidden py-0.5 sm:py-1 md:py-2 justify-center rounded-lg"
+            staggerFrom={"last"}
+            initial={{ y: "100%" }}
+            animate={{ y: 0 }}
+            exit={{ y: "-120%" }}
+            staggerDuration={0.025}
+            splitLevelClassName="overflow-hidden pb-0.5 sm:pb-1 md:pb-1"
+            transition={{ type: "spring", damping: 30, stiffness: 400 }}
+            rotationInterval={2500}
+            className="text-6xl font-bold"
+          />
+        </h1>
+        <p className=" max-w-6xl text-3xl font-light leading-10 tracking-widest">
+          A dedicated Full-Stack Web Developer with expertise in the
+          MERN stack and Next.js. I enjoy building fast, scalable, and
+          user-friendly web applications with a strong focus on performance and
+          clean architecture. My experience includes developing features like
+          authentication, real-time communication, API integration, and UI
+          libraries using technologies such as MongoDB, Express.js, React,
+          Next.js, Tailwind CSS, and ShadCN.
+        </p>
+          <div className=" my-6 space-x-4">
+          <Button className=" bg-black text-white cursor-pointer border border-white"><a href="#projects">See my work</a></Button>
+          <Button className=" text-black bg-white cursor-pointer"><a href="#contact">Hire me</a></Button>
+          </div>
+      </div>
     </div>
   );
-}
+};
+
+export default Hero;
